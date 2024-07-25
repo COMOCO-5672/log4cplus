@@ -47,6 +47,7 @@ set (log4cplus_sources
   syslogappender.cxx
   threads.cxx
   timehelper.cxx
+  timestampcheckingappender.cxx
   tls.cxx
   version.cxx)
 
@@ -199,6 +200,7 @@ install(TARGETS ${log4cplus} EXPORT "${targets_export_name}"
                           RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 install(FILES ../include/log4cplus/appender.h
+              ../include/log4cplus/timestampcheckingappender.h
               ../include/log4cplus/asyncappender.h
               ../include/log4cplus/callbackappender.h
               ../include/log4cplus/clogger.h
